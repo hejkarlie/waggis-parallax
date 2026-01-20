@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+    <head>
+        <title>Parallax Slider with jQuery</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="description" content="Parallax Slider with jQuery" />
+        <meta name="keywords" content="parallax, jquery, slider, slideshow, rotation, perspective"/>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+		<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon"/>
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+		<script src="assets/js/cufon-yui.js" type="text/javascript"></script>
+		<script src="assets/js/ChunkFive_400.font.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			Cufon.replace('h1',{ textShadow: '1px 1px #000'});
+			Cufon.replace('h2',{ textShadow: '1px 1px #000'});
+			Cufon.replace('.footer',{ textShadow: '1px 1px #000'});
+			Cufon.replace('.pxs_loading',{ textShadow: '1px 1px #000'});
+		</script>
+    </head>
+    <body>
+		<div id="pxs_container" class="pxs_container">
+			<div class="pxs_bg">
+				<div class="pxs_bg1">
+              </div>
+				<div class="pxs_bg2">
+              </div>
+				<div class="pxs_bg3"></div>
+	            <div id="laterne" class="raeppli"></div>
+	            <div id="dino" class="raeppli"></div>
+	            <div id="koenigin" class="raeppli"></div>
+	            <div id="munsterturm" class="raeppli"></div>
+	            <div id="blaser" class="raeppli"></div>
+	            <div id="elefant" class="raeppli"></div>
+	            <div id="fahre" class="raeppli"></div>
+	            <div id="wasserrad" class="raeppli"></div>
+	            <div id="frosch" class="raeppli"></div>
+	            <div id="brunnen" class="raeppli"></div>
+	            <div id="haus" class="raeppli"></div>
+	            <div id="schonauer" class="raeppli"></div>
+	            <div id="harlekin" class="raeppli"></div>
+	            <div id="schiff" class="raeppli"></div>
+	            <div id="container" class="raeppli"></div>
+	            <div id="pferd" class="raeppli"></div>
+	            <div id="nilpferd" class="raeppli"></div>
+			</div>
+			<div class="pxs_loading">Loading images...</div>
+			<div class="pxs_slider_wrapper">
+				<ul class="pxs_slider">
+					<li><div id="thumb_wrap"><div id="thumb">
+                    </div></li>
+					<li><div id="thumb_wrap"><div id="thumb">
+                    </div></li>
+					<li><div id="thumb_wrap"><div id="thumb">
+                    </div></li>
+					<li><div id="thumb_wrap"><div id="thumb">
+                    </div></li>
+					<li><div id="thumb_wrap"><div id="thumb">
+                    </div></li>
+					<li><div id="thumb_wrap"><div id="thumb">
+                    </div></li>
+					<li><div id="thumb_wrap"><div id="thumb">
+                    </div></li>
+					<li><div id="thumb_wrap"><div id="thumb">
+                    </div></li>
+					<li><div id="thumb_wrap"><div id="thumb">
+                    </div></li>
+				</ul>
+                <div class="waggis-right"></div>
+				<div class="pxs_navigation">
+					<span class="pxs_next"></span>
+					<span class="pxs_prev"></span>
+				</div>
+                <div class="newsWrap">
+					<div class="news">
+						<div id="close"></div>
+						<div class="laterne">
+							<p><b>Darum gibt es die Fasnacht</b></p>
+							<p>
+								Die Fasnacht ist das grosse Fest vor der Fastenzeit. Denn gleich nach der Fasnacht beginnt eine Zeit, in der man (eigentlich) gewisse Sachen nicht essen und trinken sollte. Da es früher noch keine Kühlschränke gab und viel Essen während dieser Zeit schlecht geworden wäre, hat man vor der Fastenzeit noch schnell ein grosses Fest gemacht und alles aufgegessen. Dieses Fest ist die Fasnacht! Mit dem Pfeiffen, Trommeln und den unheimlichen Verkleidungen will man die kalten Wintergeister vertreiben und den Frühling rufen. Denn wenn es warm ist, ist es auch nicht so schlimm, wenn man nicht viel essen darf.
+							</p>
+						</div>
+						<div class="dino">Grien80 und Dino</div>
+						<div class="koenigin">
+							<p><b>Queen Elizabeth in Basel</b></p>
+							<p>
+								Es ist richtig: die Königin von England war schon in unserer Grün 80. Die Engländer:innen sind nämlich bekannt dafür, sich besonders viel Mühe mit ihren Gärten zu geben. Den Rasen schneiden sie mit der Handschere und ihren Rosen erzählen sie lustige Geschichten, damit sie schöner wachsen. Der Park entstand 1980 als riesige Garten- und Pflanzenausstellung. Ganz viele Leute kamen, um die vielen Pflanzen und Bäume zu sehen – unter anderem auch die Königin.
+							</p>
+						</div>
+						<div class="munsterturm">Münschter</div>
+						<div class="blaser">Duurmblöser</div>
+						<div class="elefant">
+							<p><b>Elefanten auf der Pfalz</b></p>
+							<p>
+								Ja, auf der Pfalz gibt es wirklich Elefanten! Sie sind aus Stein und sitzen auf der Münstermauer. Sie sehen etwas seltsam aus. Das kommt daher, dass die Künstler:innen, die sie gemacht haben, selber noch nie einen Elefanten gesehen haben. Den Zolli gab es damals nämlich noch nicht, sie hatten nur Beschreibungen und Zeichnungen. In Basel sagt man den Elefanten auch Ylpen. Weil das Wort Ylp in der alten Schrift ausgesehen hat wie ein Elefant – sagte ein Dichter aus Basel. Früher spazierten die Ylpen aus dem Basler Zolli übrigens einmal in der Woche durch die Stadt. Wäre toll, wenn sie das heute noch tun würden, gell?
+							</p>
+						</div>
+						<div class="fahre">Fähri</div>
+						<div class="wasserrad">St. Alban</div>
+						<div class="frosch">Frösch</div>
+						<div class="brunnen">
+							<p><b>BUMM-Kunst für Kinder</b></p>
+							<p>
+								Jeannot Tinguely war ein berühmter Basler Künstler. Er sagte: „Ich will lustige Kunst machen. Kunst für Kinder, die hüpfen und klettern. Ich will, dass es gut ist, fröhlich und verrückt. Wie auf der Herbstmesse!“ Auch Fasnacht machte er gerne. Mit der Kuttlebutzer-Clique hat er einmal mit einer Kanone tausend ‚Räppli’ (Konfetti) und Federn in die Luft geschossen – mit einem lauten „BUMM“! (Und danach noch etwas mehr Krach mit dem Fasnachtsvorstand…)
+							</p>
+						</div>
+						<div class="haus">Theater</div>
+						<div class="schonauer">
+							<p><b>Das Gespenst Frau Schönauer</b></p>
+							<p>
+								Von Frau Schönauer gibt es eine gruselige Geschichte in Basel: Man sagt, dass Grossmutter Schönauers Geist jahrelang mit viel Lärm und Gepolter durch die alten Gassen am Petersberg huschte. Dabei war sie eigentlich eine nette Frau, die gerne mit den Kindern sang und lachte. Als junge Frau hatte sie dem französischen König Napoleon das Leben gerettet, deshalb schenkte er ihr jedes Jahr 2000 Franken. Das ist viel Geld! Als Frau Schönauer starb, wollten ihre Verwandten das Geld trotzdem noch bekommen. Also haben sie Grossmutter Schönauer im Keller in eine Badewanne gelegt und mit Salz überschüttet. Das Salz machte, dass der Körper von Frau Schönauer wie eine Mumie wurde. Und jedes Jahr, wenn die Ritter vom König kamen, sahen sie Frau Schönauer schlafend in einem Sessel sitzen und legten das Geld leise neben sie…
+							</p>
+						</div>
+						<div class="harlekin">Harlekin & Ueli</div>
+						<div class="schiff">Narreschiff</div>
+						<div class="container">Haafe</div>
+						<div class="pferd">Parks</div>
+						<div class="nilpferd">Zolli und Wilhelm</div>
+					</div>
+                </div>
+			</div>
+		</div>
+		<!-- The JavaScript -->
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+		<script type="text/javascript" src="assets/js/jquery.easing.1.3.js"></script>
+		<script type="text/javascript" src="assets/js/parallax.js"></script>
+    </body>
+</html>
